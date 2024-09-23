@@ -1,0 +1,15 @@
+{
+  "pack": {
+    "pack_format": 48,
+    "description": [
+      {
+        "text": "Created by ",
+        "color": "#888888"
+      },
+      {
+        "text": "Apollo",
+        "color": "#ca78e4"
+      }
+    ]
+  }
+}
