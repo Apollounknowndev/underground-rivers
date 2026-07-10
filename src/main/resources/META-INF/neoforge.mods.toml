@@ -1,0 +1,29 @@
+license = "MIT"
+
+modLoader="javafml"
+loaderVersion="[1,)"
+
+[[mods]]
+modId = "${id}"
+displayName = "${name}"
+version = "${version}"
+authors = "Apollo"
+description = "${description}"
+
+logoFile = "pack.png"
+#displayURL = "..."
+#issueTrackerUrl = "..."
+
+[[dependencies.${id}]]
+modId = "lithostitched"
+type = "required"
+versionRange = "[1.7.13,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${id}]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft}"
+ordering = "NONE"
+side = "BOTH"
