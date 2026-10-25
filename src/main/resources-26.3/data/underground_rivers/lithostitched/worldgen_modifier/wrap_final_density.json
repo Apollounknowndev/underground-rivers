@@ -1,0 +1,17 @@
+{
+  "type": "lithostitched:wrap_noise_router",
+  "priority": 2000,
+  "dimension": "minecraft:overworld",
+  "target": "final_density",
+  "wrapper_function": {
+    "type": "minecraft:add",
+    "left": {
+      "type": "lithostitched:wrapped_marker"
+    },
+    "right": {
+      "type": "minecraft:min",
+      "left": 0.0002,
+      "right": "underground_rivers:total"
+    }
+  }
+}

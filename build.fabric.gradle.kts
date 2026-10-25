@@ -64,6 +64,13 @@ loom {
     }
 }
 
+// 26.3 changed the worldgen data formats, so files in `resources-26.3` replace their counterparts
+if (sc.current.parsed >= "26.3") {
+    val overrides = rootProject.file("src/main/resources-26.3")
+    sourceSets.main { resources.exclude { overrides.resolve(it.path).isFile } }
+    tasks.processResources { from(overrides) }
+}
+
 java {
     withSourcesJar()
     targetCompatibility = requiredJava
@@ -91,6 +98,7 @@ tasks {
             register("sources", "mod.sources")
             register("version", "mod.version")
             register("minecraft", "mod.mc_compat")
+            register("lithostitched", "deps.lithostitched_compat")
         }
 
         filesMatching("fabric.mod.json") { expand(props) }
