@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:cache",
+  "input": {
+    "type": "minecraft:clamp",
+    "input": {
+      "type": "minecraft:add",
+      "left": -3,
+      "right": {
+        "type": "minecraft:mul",
+        "left": -10,
+        "right": "minecraft:overworld/erosion"
+      }
+    },
+    "min": 0,
+    "max": 1
+  }
+}

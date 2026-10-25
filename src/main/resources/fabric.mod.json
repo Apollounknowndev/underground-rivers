@@ -17,7 +17,7 @@
   "entrypoints": {},
   "depends": {
     "fabricloader": ">=0.17",
-    "lithostitched": ">=1.7.13",
+    "lithostitched": "${lithostitched}",
     "minecraft": "${minecraft}"
   }
 }
